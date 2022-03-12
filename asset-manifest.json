@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.afe7c748.chunk.css",
-    "main.js": "/static/js/main.8b85cc81.chunk.js",
-    "main.js.map": "/static/js/main.8b85cc81.chunk.js.map",
+    "main.css": "/static/css/main.082def22.chunk.css",
+    "main.js": "/static/js/main.6a262f7e.chunk.js",
+    "main.js.map": "/static/js/main.6a262f7e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1f56cba4.js",
     "runtime-main.js.map": "/static/js/runtime-main.1f56cba4.js.map",
-    "static/js/2.ccf37497.chunk.js": "/static/js/2.ccf37497.chunk.js",
-    "static/js/2.ccf37497.chunk.js.map": "/static/js/2.ccf37497.chunk.js.map",
+    "static/js/2.6059ceba.chunk.js": "/static/js/2.6059ceba.chunk.js",
+    "static/js/2.6059ceba.chunk.js.map": "/static/js/2.6059ceba.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f2277b2b075147fe53db9f0f5240ffe5.js": "/precache-manifest.f2277b2b075147fe53db9f0f5240ffe5.js",
+    "precache-manifest.a47d77750c4add573b63a39b565f951a.js": "/precache-manifest.a47d77750c4add573b63a39b565f951a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.afe7c748.chunk.css.map": "/static/css/main.afe7c748.chunk.css.map",
+    "static/css/main.082def22.chunk.css.map": "/static/css/main.082def22.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
     "static/media/animated_ashutosh.png": "/static/media/animated_ashutosh.be4f4800.png",
@@ -38,6 +38,7 @@
     "static/media/jsFramework.svg": "/static/media/jsFramework.5b4a6449.svg",
     "static/media/legato_logo.png": "/static/media/legato_logo.c597fbde.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.83ac24fb.svg",
+    "static/media/mu-logo.jpg": "/static/media/mu-logo.ae544782.jpg",
     "static/media/muffito_logo.png": "/static/media/muffito_logo.069938a8.png",
     "static/media/nptel_logo.png": "/static/media/nptel_logo.95a12a2b.png",
     "static/media/portfolio.gif": "/static/media/portfolio.414dfbd9.gif",
@@ -51,8 +52,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1f56cba4.js",
-    "static/js/2.ccf37497.chunk.js",
-    "static/css/main.afe7c748.chunk.css",
-    "static/js/main.8b85cc81.chunk.js"
+    "static/js/2.6059ceba.chunk.js",
+    "static/css/main.082def22.chunk.css",
+    "static/js/main.6a262f7e.chunk.js"
   ]
 }
