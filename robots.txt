@@ -1,7 +1,5 @@
----
-permalink: /robots.txt
----
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Disallow: /
 User-agent: *
-Disallow:
-
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Disallow: /
