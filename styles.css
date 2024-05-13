@@ -266,6 +266,7 @@ main {
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  text-align: center;
 }
 
 .about__desc,
@@ -412,18 +413,6 @@ main {
   }
 }
 
-.education__grid {
-  display: flex;
-  /* Enable flexbox for layout */
-  gap: 20px;
-  /* Adjust the spacing between items as needed */
-}
-
-/* Optional: Make education items take up equal space in the row */
-.education__item {
-  flex: 1;
-}
-
 .research__grid {
   display: flex;
   gap: 20px;
@@ -432,9 +421,9 @@ main {
 
 .research__item {
   flex: 1;
+  text-align: center;
   /* Make research items take equal space (optional) */
 }
-
 
 .skills__grid {
   display: grid;

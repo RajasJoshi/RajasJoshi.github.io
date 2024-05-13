@@ -21,9 +21,6 @@
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
-          <a class="link link--nav" href="#education">Education</a>
-        </li>
-        <li class="nav__list-item">
           <a class="link link--nav" href="#research">Research</a>
         </li>
         <li class="nav__list-item">
@@ -51,13 +48,12 @@
     <!-- About -->
     <div class="about center">
       <h1>Hi, I am <span class="about__name">Rajas Joshi.</span></h1>
-      <h2 class="about__role">A Front end Developer.</h2>
+      <h2 class="about__role">A Robotics and Embedded Developer.</h2>
       <p class="about__desc">
-        Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-        Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-        voluptatum cumque temporibus et Explicabo iste porro quis numquam
-        distinctio Repellendus adipisci nam perferendis amet eaque hic
-        Voluptates
+        I am a highly motivated robotics and embedded systems enthusiast with expertise in hardware and software
+        development. I enjoy working with cutting-edge technologies like SLAM, digital twins, and sensor fusion to
+        create intelligent, autonomous systems. I'm eager to contribute my skills to projects that advance the field of
+        robotics and have a positive impact on society.
       </p>
 
       <div class="about__contact center">
@@ -75,40 +71,26 @@
       </div>
     </div>
 
-    <!-- Education -->
-    <section class="section education" id="education">
-      <h2 class="section__title">Education</h2>
-      <div class="education__grid">
-        <div class="education__item">
-          <h3 class="education__school">Your University Name</h3>
-          <p class="education__degree">Your Degree</p>
-          <p class="education__dates">Start Year - End Year</p>
-        </div>
-
-        <div class="education__item">
-          <h3 class="education__school">Another University/School Name</h3>
-          <p class="education__degree">Degree/Program</p>
-          <p class="education__dates">Start Year - End Year</p>
-        </div>
-
-      </div>
-    </section>
-
     <!-- Research -->
     <section class="section research" id="research">
       <h2 class="section__title">Research</h2>
       <div class="research__grid">
         <div class="research__item">
-          <h3 class="research__title">Research Title 1</h3>
-          <p class="research__description">Brief description of your first research project.</p>
-          <p class="research__dates">Start Date - End Date</p>
+          <h3 class="research__title">Simultaneous Navigator for Autonomous Identification and Localization Robot</h3>
+          <p class="research__authors">R. Joshi, D. Bhaiya, A. Purkayastha, S. Patil, and A. Deshpande (2021).</p>
+          <p class="research__description">This paper presents a robot system which is named SNAIL Bot. It uses a 2D
+            360-degree LiDAR and IMU to localize itself with respect to the environment. The robot is also equipped with
+            a 2-DOF camera to detect ArUco markers for loop closures. The robot is able to generate a map of the
+            environment and localize itself with respect to the map.</p>
+          <p class="research__publication">2021 IEEE Region 10 Symposium (TENSYMP), pp. 1-6, DOI:
+            10.1109/TENSYMP52854.2021.9550901</p>
         </div>
-        <div class="research__item">
+        <!-- <div class="research__item">
           <h3 class="research__title">Research Title 2</h3>
           <p class="research__description">Brief description of your second research project.</p>
           <p class="research__dates">Start Date - End Date</p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Projects -->
@@ -116,70 +98,74 @@
       <h2 class="section__title">Projects</h2>
 
       <div class="projects__grid">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">SASS</li>
-            <li class="project__stack-item">TypeScript</li>
-            <li class="project__stack-item">React</li>
-          </ul>
 
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
+        <div class="project">
+          <h3>Heartguard</h3>
+          <p class="project__dates">February 2024 - Present</p>
+          <p class="project__description">
+            Wearable arrhythmia detection system combining PPG and ECG data for high-accuracy, real-time detection.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/RajasJoshi/HeartGuard" aria-label="source code" class="link link--icon"
+              target="_blank">
+              <i aria-hidden="true" class="fab fa-github"></i> Source
+            </a>
+          </div>
         </div>
 
         <div class="project">
-          <h3>Project 2</h3>
+          <h3>Digital Twin of a NAO Humanoid Robot</h3>
+          <p class="project__dates">September 2023 - April 2024</p>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            High-fidelity digital twin of NAO V6 robot in Webots for testing multi-agent soccer strategies, path
+            planning, and localization algorithms.
           </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">SASS</li>
-            <li class="project__stack-item">TypeScript</li>
-            <li class="project__stack-item">React</li>
-          </ul>
-
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
+          <div class="project__links">
+            <a href="https://github.com/RajasJoshi/UoG_Robotics_TDP4" aria-label="source code" class="link link--icon"
+              target="_blank">
+              <i aria-hidden="true" class="fab fa-github"></i> Source
+            </a>
+          </div>
         </div>
-
         <div class="project">
-          <h3>Project 3</h3>
+          <h3>Simultaneous Localization and Mapping</h3>
+          <p class="project__dates">May 2020 - July 2021</p>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            Autonomous differential-drive robot for indoor navigation using SLAM algorithms (Hector SLAM, RTAB-MAP).
           </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">SASS</li>
-            <li class="project__stack-item">TypeScript</li>
-            <li class="project__stack-item">React</li>
-          </ul>
-
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
+        </div>
+        <div class="project">
+          <h3>meta-customlayer</h3>
+          <p class="project__dates">May 2020 - July 2021</p>
+          <p class="project__description">
+            A custom Yocto Project layer for tailoring embedded Linux builds with specialized software and
+            configurations.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/your-github-username/slam-project" aria-label="source code"
+              class="link link--icon" target="_blank">
+              <i aria-hidden="true" class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Baxter Chessbot</h3>
+          <p class="project__dates">Jan 2024 - April 2024</p>
+          <p class="project__description">
+            Baxter Chessbot is a project that uses the Baxter Robot from Rethink Robotics to play a game of chess. The
+            robot is capable of recognizing the state of the game, making its own moves, and physically moving the
+            pieces on the board.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/RajasJoshi/Baxter-Chessbot" aria-label="source code" class="link link--icon"
+              target="_blank">
+              <i aria-hidden="true" class="fab fa-github"></i> Source
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
 
     <!-- Skills -->
     <section class="section skills" id="skills">
