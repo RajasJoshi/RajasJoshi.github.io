@@ -1,5 +1,5 @@
-/*===============
-  global styles
+/*=============== 
+  Global Styles 
 ===============*/
 
 * {
@@ -99,7 +99,7 @@ button {
 }
 
 /*===================
-  buttons and links
+  Buttons and Links
 ===================*/
 
 .link {
@@ -204,7 +204,7 @@ button {
 }
 
 /*========
-  layout
+  Layout
 ========*/
 
 .center {
@@ -282,64 +282,108 @@ main {
   margin-right: 1em;
 }
 
+/*===================
+  Projects Section
+===================*/
+
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .project {
-  padding: 2em;
-  margin: 0 auto;
-  text-align: center;
+  background: var(--clr-bg-alt);
+  border-radius: 8px;
   box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .project:hover {
-  transform: translateY(-7px);
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--clr-primary);
+}
+
+.project__dates {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .project__description {
-  margin-top: 1em;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.project__stack {
+.project__links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
-.project__stack-item {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+.project__links .link--icon {
+  display: flex;
+  align-items: center;
+  color: var(--clr-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.project .link--icon {
-  margin-left: 0.5em;
+.project__links .link--icon:hover {
+  color: #0056b3;
+}
+
+.project__links .link--icon i {
+  margin-right: 5px;
+}
+
+/*===================
+  Skills Section
+===================*/
+
+.skills__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .skills__list {
-  max-width: 450px;
-  width: 95%;
-  margin: 0 auto;
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .skills__list-item {
-  margin: 0.5em;
+  font-weight: 500;
+  margin: 10px;
 }
+
+/*===================
+  Contact Section
+===================*/
 
 .contact {
   flex-direction: column;
 }
+
+/*===================
+  Footer Section
+===================*/
 
 .footer {
   padding: 3em 0;
@@ -352,6 +396,10 @@ main {
   font-weight: 700;
   color: var(--clr-fg);
 }
+
+/*===================
+  Scroll to Top
+===================*/
 
 .scroll-top {
   display: none;
@@ -416,31 +464,25 @@ main {
 .research__grid {
   display: flex;
   gap: 20px;
-  /* Adjust spacing as needed */
 }
 
 .research__item {
   flex: 1;
   text-align: center;
-  /* Make research items take equal space (optional) */
 }
 
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  /* Maintain the gap between columns */
 }
 
 .skills__list {
   list-style: none;
-  /* Remove default list styling */
   padding: 0;
-  /* Remove default list padding */
 }
 
 .skills__list-item {
   font-weight: 500;
   margin-bottom: 10px;
-  /* Add margin between skill items */
 }

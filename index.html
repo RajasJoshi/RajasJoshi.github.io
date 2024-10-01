@@ -1,264 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Rajas Joshi" />
+    <meta
+      name="keywords"
+      content="Rajas Joshi, Portfolio, Robotics, Embedded Developer"
+    />
+    <meta name="author" content="Rajas Joshi" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rajas Joshi</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <title>Rajas Joshi</title>
-</head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://RajasJoshi.github.io/" class="link">RajasJoshi</a>
+      </h3>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#research">Research</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-<body class="light" id="top">
-  <header class="header center">
-    <h3>
-      <a href="https://RajasJoshi.github.io/" class="link">RajasJoshi</a>
-    </h3>
-    <nav class="nav center">
-      <ul class="nav__list center">
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#research">Research</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#skills">Skills</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#contact">Contact</a>
-        </li>
-      </ul>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
-      <button type="button" aria-label="toggle theme" class="btn btn--icon">
-        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-      </button>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
-      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-        <i aria-hidden="true" class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+    <main>
+      <!-- About -->
+      <section class="about center">
+        <h1>Hi, I am <span class="about__name">Rajas Joshi.</span></h1>
+        <h2 class="about__role">A Robotics and Embedded Developer.</h2>
+        <p class="about__desc">Building intelligent autonomous solutions.</p>
 
-  <main>
-    <!-- About -->
-    <div class="about center">
-      <h1>Hi, I am <span class="about__name">Rajas Joshi.</span></h1>
-      <h2 class="about__role">A Robotics and Embedded Developer.</h2>
-      <p class="about__desc">
-        Building intelligent autonomous solutions.
+        <div class="about__contact center">
+          <a href="RajasJoshi-Resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
 
-      </p>
+          <a
+            href="https://github.com/RajasJoshi"
+            aria-label="github"
+            class="link link--icon"
+            rel="noopener noreferrer"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
 
-      <div class="about__contact center">
-        <a href="RajasJoshi-Resume.pdf">
-          <span class="btn btn--outline">Resume</span>
+          <a
+            href="https://linkedin.com/in/rajasjoshi99/"
+            aria-label="linkedin"
+            class="link link--icon"
+            rel="noopener noreferrer"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section class="section research" id="research">
+        <h2 class="section__title">Research</h2>
+        <div class="research__grid">
+          <article class="research__item">
+            <h3 class="research__title">
+              Simultaneous Navigator for Autonomous Identification and
+              Localization Robot
+            </h3>
+            <p class="research__authors">
+              R. Joshi, D. Bhaiya, A. Purkayastha, S. Patil, and A. Deshpande
+              (2021).
+            </p>
+            <p class="research__description">
+              This paper presents a robot system which is named SNAIL Bot. It
+              uses a 2D 360-degree LiDAR and IMU to localize itself with respect
+              to the environment. The robot is also equipped with a 2-DOF camera
+              to detect ArUco markers for loop closures. The robot is able to
+              generate a map of the environment and localize itself with respect
+              to the map.
+            </p>
+            <p class="research__publication">
+              2021 IEEE Region 10 Symposium (TENSYMP), pp. 1-6, DOI:
+              10.1109/TENSYMP52854.2021.9550901
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project">
+            <h3>Foggy PCL</h3>
+            <p class="project__dates">May 2024 - August 2024</p>
+            <p class="project__description">
+              Data processing and feature extraction of LiDAR pointcloud data to
+              detect foggy weather changes.
+            </p>
+            <div class="project__links">
+              <a
+                href="https://github.com/RajasJoshi/Foggy_PCL"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Heartguard</h3>
+            <p class="project__dates">February 2024 - April 2024</p>
+            <p class="project__description">
+              Wearable arrhythmia detection system combining PPG and ECG data
+              for high-accuracy, real-time detection.
+            </p>
+            <div class="project__links">
+              <a
+                href="https://github.com/RajasJoshi/HeartGuard"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Digital Twin of a NAO Humanoid Robot</h3>
+            <p class="project__dates">September 2023 - April 2024</p>
+            <p class="project__description">
+              High-fidelity digital twin of NAO V6 robot in Webots for testing
+              multi-agent soccer strategies, path planning, and localization
+              algorithms.
+            </p>
+            <div class="project__links">
+              <a
+                href="https://github.com/RajasJoshi/UoG_Robotics_TDP4"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Simultaneous Localization and Mapping</h3>
+            <p class="project__dates">May 2020 - July 2021</p>
+            <p class="project__description">
+              Autonomous differential-drive robot for indoor navigation using
+              SLAM algorithms (Hector SLAM, RTAB-MAP).
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>meta-customlayer</h3>
+            <p class="project__dates">May 2020 - July 2021</p>
+            <p class="project__description">
+              A custom Yocto Project layer for tailoring embedded Linux builds
+              with specialized software and configurations.
+            </p>
+            <div class="project__links">
+              <a
+                href="https://github.com/your-github-username/slam-project"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Baxter Chessbot</h3>
+            <p class="project__dates">Jan 2024 - April 2024</p>
+            <p class="project__description">
+              Baxter Chessbot is a project that uses the Baxter Robot from
+              Rethink Robotics to play a game of chess. The robot is capable of
+              recognizing the state of the game, making its own moves, and
+              physically moving the pieces on the board.
+            </p>
+            <div class="project__links">
+              <a
+                href="https://github.com/RajasJoshi/Baxter-Chessbot"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+              alt="Git"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
+              alt="C"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+              alt="C++"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"
+              alt="Python"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"
+              alt="Rust"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"
+              alt="Bash"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+              alt="markdown"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/ROS-EE43A7?style=for-the-badge&logo=Robot%20Operating%20System&logoColor=white"
+              alt="ROS"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"
+              alt="Jira"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white"
+              alt="PopOS"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"
+              alt="Slack"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/OpenWrt-00B5AD?style=for-the-badge&logo=openwrt&logoColor=white"
+              alt="OpenWrt"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Yocto-000000?style=for-the-badge&logo=yocto&logoColor=white"
+              alt="Yocto"
+            />
+          </li>
+          <li class="skills__list-item">
+            <img
+              src="https://img.shields.io/badge/Buildroot-000000?style=for-the-badge&logo=buildroot&logoColor=white"
+              alt="Buildroot"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:rajasj99@gmail.com">
+          <span class="btn btn--outline">Email me</span>
         </a>
+      </section>
+    </main>
 
-        <a href="https://github.com/RajasJoshi" aria-label="github" class="link link--icon">
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
+    <footer class="footer">
+      <a
+        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        class="link footer__link"
+        rel="noopener noreferrer"
+      >
+        Created By RajasJoshi
+      </a>
+    </footer>
 
-        <a href="https://linkedin.com/in/rajasjoshi99/" aria-label="linkedin" class="link link--icon">
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
         </a>
       </div>
     </div>
 
-    <!-- Research -->
-    <section class="section research" id="research">
-      <h2 class="section__title">Research</h2>
-      <div class="research__grid">
-        <div class="research__item">
-          <h3 class="research__title">Simultaneous Navigator for Autonomous Identification and Localization Robot</h3>
-          <p class="research__authors">R. Joshi, D. Bhaiya, A. Purkayastha, S. Patil, and A. Deshpande (2021).</p>
-          <p class="research__description">This paper presents a robot system which is named SNAIL Bot. It uses a 2D
-            360-degree LiDAR and IMU to localize itself with respect to the environment. The robot is also equipped with
-            a 2-DOF camera to detect ArUco markers for loop closures. The robot is able to generate a map of the
-            environment and localize itself with respect to the map.</p>
-          <p class="research__publication">2021 IEEE Region 10 Symposium (TENSYMP), pp. 1-6, DOI:
-            10.1109/TENSYMP52854.2021.9550901</p>
-        </div>
-        <!-- <div class="research__item">
-          <h3 class="research__title">Research Title 2</h3>
-          <p class="research__description">Brief description of your second research project.</p>
-          <p class="research__dates">Start Date - End Date</p>
-        </div>
-      </div> -->
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
-
-      <div class="projects__grid">
-
-        <div class="project">
-          <h3>Foggy PCL</h3>
-          <p class="project__dates">May 2024 - August 2024</p>
-          <p class="project__description">
-            Data processing and feature extraction of LiDAR pointcloud data to detect foggy weather changes.
-          </p>
-          <div class="project__links">
-            <a href="https://github.com/RajasJoshi/Foggy_PCL" aria-label="source code" class="link link--icon"
-              target="_blank">
-              <i aria-hidden="true" class="fab fa-github"></i> Source
-            </a>
-          </div>
-        </div>
-
-        <div class="project">
-          <h3>Heartguard</h3>
-          <p class="project__dates">February 2024 - April 2024</p>
-          <p class="project__description">
-            Wearable arrhythmia detection system combining PPG and ECG data for high-accuracy, real-time detection.
-          </p>
-          <div class="project__links">
-            <a href="https://github.com/RajasJoshi/HeartGuard" aria-label="source code" class="link link--icon"
-              target="_blank">
-              <i aria-hidden="true" class="fab fa-github"></i> Source
-            </a>
-          </div>
-        </div>
-
-        <div class="project">
-          <h3>Digital Twin of a NAO Humanoid Robot</h3>
-          <p class="project__dates">September 2023 - April 2024</p>
-          <p class="project__description">
-            High-fidelity digital twin of NAO V6 robot in Webots for testing multi-agent soccer strategies, path
-            planning, and localization algorithms.
-          </p>
-          <div class="project__links">
-            <a href="https://github.com/RajasJoshi/UoG_Robotics_TDP4" aria-label="source code" class="link link--icon"
-              target="_blank">
-              <i aria-hidden="true" class="fab fa-github"></i> Source
-            </a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Simultaneous Localization and Mapping</h3>
-          <p class="project__dates">May 2020 - July 2021</p>
-          <p class="project__description">
-            Autonomous differential-drive robot for indoor navigation using SLAM algorithms (Hector SLAM, RTAB-MAP).
-          </p>
-        </div>
-        <div class="project">
-          <h3>meta-customlayer</h3>
-          <p class="project__dates">May 2020 - July 2021</p>
-          <p class="project__description">
-            A custom Yocto Project layer for tailoring embedded Linux builds with specialized software and
-            configurations.
-          </p>
-          <div class="project__links">
-            <a href="https://github.com/your-github-username/slam-project" aria-label="source code"
-              class="link link--icon" target="_blank">
-              <i aria-hidden="true" class="fab fa-github"></i> Source
-            </a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Baxter Chessbot</h3>
-          <p class="project__dates">Jan 2024 - April 2024</p>
-          <p class="project__description">
-            Baxter Chessbot is a project that uses the Baxter Robot from Rethink Robotics to play a game of chess. The
-            robot is capable of recognizing the state of the game, making its own moves, and physically moving the
-            pieces on the board.
-          </p>
-          <div class="project__links">
-            <a href="https://github.com/RajasJoshi/Baxter-Chessbot" aria-label="source code" class="link link--icon"
-              target="_blank">
-              <i aria-hidden="true" class="fab fa-github"></i> Source
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Skills -->
-    <section class="section skills" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/CI/CD-2CA5E0?style=for-the-badge&logo=gitlab&logoColor=white" alt="CI/CD">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-            alt="C++">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"
-            alt="Python">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"
-            alt="Bash">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
-            alt="markdown">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/ROS-EE43A7?style=for-the-badge&logo=Robot%20Operating%20System&logoColor=white"
-            alt="ROS">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white" alt="Jira">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white"
-            alt="PopOS">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/OpenWrt-00B5AD?style=for-the-badge&logo=openwrt&logoColor=white"
-            alt="OpenWrt">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Yocto-000000?style=for-the-badge&logo=yocto&logoColor=white" alt="Yocto">
-        </li>
-        <li class="skills__list-item"><img
-            src="https://img.shields.io/badge/Buildroot-000000?style=for-the-badge&logo=buildroot&logoColor=white"
-            alt="Buildroot">
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <a href="mailto:rajasj99@gmail.com">
-        <span class="btn btn--outline">Email me</span>
-      </a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a href="https://github.com/rajshekhar26/cleanfolio-minimal" class="link footer__link">
-      Created By RajasJoshi
-    </a>
-  </footer>
-
-  <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js" defer></script>
+  </body>
 </html>
